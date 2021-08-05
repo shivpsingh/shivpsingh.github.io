@@ -1,0 +1,7 @@
+# Files to exclude
+
+# Folders to exclude
+
+venv
+.vscode
+
