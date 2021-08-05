@@ -1,0 +1,51 @@
+/* Imports */
+
+
+/* Variables */
+
+:root {
+    --ff-primary: san-sarif;
+    --ff-secondary: san-sarif;
+
+    --fw-large: 600;
+    --fw-reg: 400;
+    --fw-thin: 200;
+
+    --clr-primary: #000;
+    --clr-secondary: #000;
+    --clr-theme: #000;
+
+    --clr-dark: #000;
+    --clr-light: #fff;
+
+    --fclr-primary: #000;
+    --fclr-secondary: #000;
+
+    --dft-padding: 1rem;
+    --dft-margin: 1rem;
+    --dft-font-size: 16px;
+}
+
+/* Reset Block */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+}
+
+/* Media Query Template */
+
+/* @media only screen and (min-width: 900px) {} */
+
+/* CSS Code Block */
