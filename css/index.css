@@ -123,15 +123,25 @@ input {
     border-radius: 5px;
 }
 
+.disp-none {
+    display: none;
+}
+
+.disp-block {
+    display: block;
+}
+
 /* Navigation Section */
 
 .navbar {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     justify-content: space-between;
+    align-items: center;
     padding: 0.5rem 1rem;
     position: fixed;
-    align-items: center;
     top: 0;
     left: 0;
     background-color: var(--clr-light-bg);
@@ -140,15 +150,32 @@ input {
 }
 
 .logo {
-    width: 50%;
+    width: 100%;
 }
 
 .logo-img {
     max-width: 75px;
 }
 
+.nav-trigger {
+    text-align: right;
+}
+
 .navitems {
+    grid-column: span 2;
     display: none;
+    line-height: 2;
+    background-color: var(--clr-light-bg);
+    text-align: right;
+}
+
+.navitems ul li {
+    list-style: none;
+}
+
+.navitems ul li a {
+    text-decoration: none;
+    color: var(--clr-grey);
 }
 
 /* Navigation Ends */
@@ -262,6 +289,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    margin-bottom: 3rem;
 }
 
 main section {
