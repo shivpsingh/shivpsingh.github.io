@@ -61,6 +61,7 @@ body {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 /* Media Query Template */
@@ -84,15 +85,18 @@ img {
     text-decoration: underline;
 }
 
-.btn-cta {
-    color: #fff;
-    background-color: #3842d3;
+.btn {
     border-radius: 4px;
     font-weight: 400;
     border: none;
     font-size: .9rem;
     padding: 0.7rem 1em;
     text-transform: uppercase;
+}
+
+.cta {
+    color: #fff;
+    background-color: #3842d3;
 }
 
 input {
@@ -133,7 +137,7 @@ input {
 
 /* Navigation Section */
 
-.navbar {
+.navbar .ctn {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -153,11 +157,11 @@ input {
     width: 100%;
 }
 
-.logo-img {
+.logo__img {
     max-width: 75px;
 }
 
-.nav-trigger {
+.mobile-nav {
     text-align: right;
 }
 
@@ -182,7 +186,7 @@ input {
 
 /* Hero Section for the Site */
 
-.hero {
+.hero .ctn {
     max-width: 90%;
     margin: auto;
     padding-top: 7rem;
@@ -210,13 +214,13 @@ input {
     font-weight: var(--fw-reg);
 }
 
-.para-1, .para-2 {
+.hero__para1, .hero__para2 {
     font-family: var(--ff-primary);
     font-size: 1.25rem;
     font-weight: var(--fw-reg);
 }
 
-.para-1 {
+.hero__para1 {
     margin-bottom: 1rem;
 }
 
@@ -243,7 +247,7 @@ input {
 
 /* Areas of Work */
 
-.areas-of-work {
+.areas-of-work .ctn {
     width: 95%;
     margin: auto;
     display: flex;
@@ -280,7 +284,7 @@ input {
 
 /* Main Section  */
 
-main {
+main .ctn {
     max-width: 90%;
     margin: auto;
 
@@ -292,7 +296,7 @@ main {
     margin-bottom: 3rem;
 }
 
-main section {
+main .ctn section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -351,7 +355,7 @@ main section {
 
 /* Subscribe Section */
 
-.subscribe {
+.subscribe .ctn {
     max-width: 100%;
     background-color: var(--clr-light-bg);
     padding: 3rem 1rem;
@@ -398,7 +402,7 @@ main section {
 
 /* Footer */
 
-footer {
+footer .ctn {
     color: var(--clr-light);
     background-color: var(--clr-dark);
     padding: 2rem 1rem;
@@ -415,3 +419,5 @@ footer {
     display: flex;
     gap: 1.5rem;
 }
+
+/* Footer Ends */

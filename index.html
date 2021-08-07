@@ -45,14 +45,13 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- Making container will let to shift whole container in the center -->
-        <!-- Navigation Section -->
-        <nav class="navbar">
+    <!-- Navigation Section -->
+    <nav class="navbar">
+        <div class="ctn">
             <div class="logo">
-                <img class="logo-img" src="img/logo.svg" alt="Shiv">
+                <img class="logo__img" src="img/logo.svg" alt="Shiv">
             </div>
-            <div id="nav-trigger" class="nav-trigger">
+            <div id="nav-trigger" class="mobile-nav nav-trigger">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                     <g fill="var(--color-default)">
                         <path
@@ -68,34 +67,38 @@
                     <li><a href="#">Book Bites</a></li>
                 </ul>
             </div>
-        </nav>
-        <!-- Navigation Ends -->
+        </div>
+    </nav>
+    <!-- Navigation Ends -->
 
-        <!-- Hero Section for the Site -->
-        <header class="hero">
+    <!-- Hero Section for the Site -->
+    <header class="hero">
+        <div class="ctn">
             <div class="hero__content">
                 <h1>Hi —</h1>
                 <h3>I'm Shiv. I'm a <span class="focus">Software Engineer</span>, <span class="focus">YouTuber</span>
                     and <span class="focus">VideoGrapher</span>.</h3>
-                <p class="para-1">
+                <p class="hero__para1">
                     On this site we explore the strategies and tools that help us live happier, healthier, more
                     productive lives.
                 </p>
-                <p class="para-2">
+                <p class="hero__para2">
                     And over at Sunday Snippets - my weekly newsletter - I share actionable productivity tips and
                     practical life advice. Sign up below if you want to join a growing community of more than 100,000
                     friendly readers.
                 </p>
-                <button class="btn-cta">Subscribe</button>
+                <button class="btn cta">Subscribe</button>
             </div>
             <div class="hero__video">
                 <img src="https://picsum.photos/400/200" alt="">
             </div>
-        </header>
-        <!-- Hero Section Ends -->
+        </div>
+    </header>
+    <!-- Hero Section Ends -->
 
-        <!-- Areas of Work -->
-        <section class="areas-of-work">
+    <!-- Areas of Work -->
+    <section class="areas-of-work">
+        <div class="ctn">
             <div class="cta-tag">
                 <h1>Check out my Ultimate Guides</h1>
                 <div class="cta-tag__arrow">
@@ -124,11 +127,13 @@
                 <h2>Title</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, natus?</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Areas of Work End -->
+    <!-- Areas of Work End -->
 
-        <main>
+    <main>
+        <div class="ctn">
             <section class="booknotes">
                 <h1 class="focus_line">Explore</h1>
                 <div class="blocks">
@@ -162,9 +167,11 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, placeat?</p>
                 </div>
             </section>
-        </main>
+        </div>
+    </main>
 
-        <section id="subscribe" class="subscribe">
+    <section id="subscribe" class="subscribe">
+        <div class="ctn">
             <div class="summary">
                 <h3>Subscribe to Short Weekly Bites</h3>
                 <p class="catch-line">"Your mails are always appreciated"</p>
@@ -176,13 +183,15 @@
                 <form action="#">
                     <input type="text" class="name" name="name" id="name" placeholder="First Name" required>
                     <input type="email" class="email" name="email" id="email" placeholder="Email Address" required>
-                    <button class="btn-cta" type="submit" value="Subscribe">Subscribe</button>
+                    <button class="btn cta" type="submit" value="Subscribe">Subscribe</button>
                 </form>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Copyright Details -->
-        <footer>
+    <!-- Copyright Details -->
+    <footer>
+        <div class="ctn">
             <p>&copy; Shiv Pratap Singh 2021.</p>
             <div class="social__icons">
                 <i class="fab fa-youtube"></i>
@@ -191,9 +200,9 @@
                 <i class="fab fa-github"></i>
                 <i class="fab fa-linkedin"></i>
             </div>
-        </footer>
-        <!-- Footer Section Ends -->
-    </div>
+        </div>
+    </footer>
+    <!-- Footer Section Ends -->
     <!-- Custom JS -->
     <script src="js/index.js"></script>
 </body>
