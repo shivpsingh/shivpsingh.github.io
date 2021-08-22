@@ -173,7 +173,6 @@ nav {
 
 .navitems {
     grid-column: span 2;
-    display: none;
     line-height: 2;
     text-align: right;
 }
@@ -209,13 +208,13 @@ nav {
         max-width: 50%;
     }
 
-    #navitems {
+    .navitems {
         display: block;
         line-height: 2;
         background-color: transparent;
     }
 
-    #navitems ul li {
+    .navitems ul li {
         display: inline-block;
         margin-left: 1.5em;
     }
