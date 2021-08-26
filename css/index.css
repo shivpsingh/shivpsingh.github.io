@@ -7,7 +7,8 @@
 
 :root {
     --ff-primary: "Inter", san-sarif;
-    --ff-secondary: "Gloria Hallelujah", san-sarif;
+    --ff-secondary: "Gloria Hallelujah", sans-sarif;
+    --ff-default: sans-sarif;
 
     --fw-large: 600;
     --fw-reg: 400;
@@ -221,6 +222,90 @@ nav {
 }
 
 /* Navigation Ends */
+
+/* Hero Section for all pages */
+
+.hero__section {
+    max-width: 90%;
+    margin: auto;
+    padding-top: 7rem;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--clr-secondary);
+}
+
+.hero__section-ctn {
+    max-width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-default);
+}
+
+.illustration {
+    max-width: 500px;
+    border: 1px solid var(--clr-grey);
+    box-shadow: 2px 5px var(--clr-grey);
+    border-radius: 100%;
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    margin-bottom: 50px;
+}
+
+.illustration img {
+    min-width: 15rem;
+}
+
+.illustration:hover {
+    border: 1px solid var(--clr-primary);
+    box-shadow: 2px 5px var(--clr-primary);
+    transition: box-shadow ease-in-out 200ms;
+}
+
+.headline {
+    max-width: 75ch;
+    font-size: 2rem;
+    font-family: var(--ff-primary);
+    margin-bottom: 20px;
+}
+
+.context-line {
+    max-width: 75ch;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 699px) {
+    .hero__section {
+        max-width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .hero__section {
+        padding-top: 7rem;
+    }
+}
+
+@media only screen and (min-width: 1023px) {
+    .hero__section {
+        max-width: 1040px;
+        margin: auto;
+        margin-bottom: 30px;
+        padding-top: 5rem;
+    }
+}
+
+/* Hero Section for all Pages Ends */
 
 /* Hero Section for the Site */
 
