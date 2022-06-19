@@ -34,6 +34,16 @@
     --dft-padding: 1rem;
     --dft-margin: 1rem;
     --dft-font-size: 16px;
+
+    --max-width: 1040px;
+    --fix-width: 1040px;
+}
+
+@media only screen and (min-width: 1023px) {
+    :root {
+        --max-width: 1600px;
+        --fix-width: 1500px;
+    }
 }
 
 /* Reset Block */
@@ -153,9 +163,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 1rem;
-    position: fixed;
     background-color: inherit;
-    border-bottom: inherit;
+    border: 0;
+    /* position: fixed; */
     top: 0;
     left: 0;
 }
@@ -187,7 +197,11 @@ nav {
     color: var(--clr-grey);
 }
 
-@media only screen and (min-width: 899px) {
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 700px) {
     .mobile-nav {
         display: none;
     }
@@ -195,7 +209,7 @@ nav {
         z-index: 0;
     }
     .navbar .ctn {
-        max-width: 1040px;
+        max-width: 90%;
         margin: auto;
         display: flex;
         justify-content: space-between;
@@ -203,7 +217,6 @@ nav {
         padding: 0.5rem 1rem;
         position: relative;
         background-color: inherit;
-        border-bottom: inherit;
     }
     .logo {
         max-width: 50%;
@@ -218,6 +231,21 @@ nav {
     .navitems ul li {
         display: inline-block;
         margin-left: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 1023px) {
+    .navbar .ctn {
+        max-width: var(--fix-width);
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .navbar .ctn {
+    padding-left: 1rem;
+    padding-right: 1rem;
     }
 }
 
@@ -294,11 +322,12 @@ nav {
     .hero__section {
         padding-top: 7rem;
     }
+
 }
 
 @media only screen and (min-width: 1023px) {
     .hero__section {
-        max-width: 1040px;
+        max-width: var(--max-width);
         margin: auto;
         margin-bottom: 30px;
         padding-top: 5rem;
@@ -324,6 +353,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    text-align: justify;
 }
 
 .hero__content h1 {
@@ -384,14 +414,24 @@ nav {
     .hero .ctn {
         flex-direction: row;
         align-items: center;
-        gap: 3rem;
+        gap: 2rem;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .hero .ctn {
+        gap: 5rem;
     }
 }
 
 @media only screen and (min-width: 1023px) {
     .hero {
-        max-width: 1040px;
+        max-width: var(--max-width);
         margin: auto;
+    }
+
+    .hero .ctn {
+        gap: 10rem;
     }
 }
 
@@ -442,14 +482,14 @@ nav {
 @media only screen and (min-width: 700px) {
     .areas-of-work .ctn {
         flex-direction: row;
-        gap: 1rem;
+        gap: 7rem;
         margin-bottom: 3rem;
     }
 }
 
 @media only screen and (min-width: 1023px) {
     .areas-of-work {
-        max-width: 1040px;
+        max-width: var(--max-width);
         margin: auto;
     }
 }
@@ -544,8 +584,12 @@ main .ctn section {
 
 @media only screen and (min-width: 1023px) {
     main {
-        max-width: 1040px;
+        max-width: var(--max-width);
         margin: auto;
+    }
+
+    .main .ctn {
+        gap: 12rem;
     }
 }
 
@@ -618,8 +662,22 @@ main .ctn section {
 
 @media only screen and (min-width: 1023px) {
     .subscribe .ctn {
-        max-width: 1040px;
+        max-width: var(--fix-width);
         margin: auto;
+        gap: 12rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .email-form {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .subscribe .ctn {
+    padding-left: 1rem;
+    padding-right: 1rem;
     }
 }
 
@@ -665,8 +723,17 @@ footer .ctn {
 
 @media only screen and (min-width: 1023px) {
     footer .ctn {
-        max-width: 1040px;
+        max-width: var(--fix-width);
         margin: auto;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    footer .ctn {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 
